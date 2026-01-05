@@ -26,9 +26,15 @@ class Math {
 
   checkIfNumberSeparator( value = '', index = 0, startIndex = 0 ) {
     return index > startIndex &&
-          index <= value.length - 2 &&
-          this.checkIfNumber(value[index+1]) &&
-          value[index] == '.'
+      index <= value.length - 2 &&
+      this.checkIfNumber( value[index+1] ) &&
+      value[index] == '.'
+  }
+
+  checkIfMinusSigns( value = '', index = 0, startIndex = 0 ) {
+    return index == startIndex &&
+      this.checkIfNumber( value[index+1] ) &&
+      value[index] == '-'
   }
 
   extractNumber( mixedValue = '', startIndex = 0 ) {
@@ -38,12 +44,13 @@ class Math {
       value.split( '.' ).length > 2 )
       return null;
     
-    let result = "";
-
+    let result = '';
     for ( let i = startIndex; i < value.length; i++ ) {
       let char = value[i];
 
-      if ( !this.checkIfNumber( char ) && !this.checkIfNumberSeparator( value, i, startIndex ) )
+      if ( !this.checkIfNumber( char ) &&
+        !this.checkIfNumberSeparator( value, i, startIndex ) &&
+        !this.checkIfMinusSigns( value, i, startIndex ) )
         break;
 
       result += char;
