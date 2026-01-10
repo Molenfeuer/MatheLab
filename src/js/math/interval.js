@@ -8,16 +8,16 @@ class Interval extends Math {
   constructor( scheme = '' ) {
     super( scheme );
 
-    this.#startTag = this.validateTag( scheme.charAt( 0 ), this.#validTags );
-    this.#endTag = this.validateTag( scheme.charAt( scheme.length - 1 ), this.#validTags );
+    this.#startTag = Math.validateTag( scheme.charAt( 0 ), this.#validTags );
+    this.#endTag = Math.validateTag( scheme.charAt( scheme.length - 1 ), this.#validTags );
   
     if ( !this.#startTag || !this.#endTag )
       throw new TypeError( 'Start and/or endtag has to be [ or ]' );
 
     let mixedEndpoints = scheme.split( ',' );
 
-    this.#leftEndpoint = this.extractNumber( mixedEndpoints[0], 1 );
-    this.#rightEndpoint = this.extractNumber( mixedEndpoints[1] );
+    this.#leftEndpoint = Math.extractNumber( mixedEndpoints[0], 1 );
+    this.#rightEndpoint = Math.extractNumber( mixedEndpoints[1] );
 
     if ( !this.#leftEndpoint || !this.#rightEndpoint )
       throw new TypeError( 'Both numbers have to be integers' );
@@ -87,7 +87,7 @@ class Interval extends Math {
 
   // Obere Schranke (skript-06: Definition 6.3.1)
   checkIfUpperBound( value ){
-    let number = this.extractNumber( value );
+    let number = Math.extractNumber( value );
 
     if (!number){
       return null;
@@ -98,7 +98,7 @@ class Interval extends Math {
 
   // Untere Schranke (skript-06: Definition 6.3.1)
   checkIfLowerBound( value ) {
-    let number = this.extractNumber( value );
+    let number = Math.extractNumber( value );
 
     if (!number){
       return null;
