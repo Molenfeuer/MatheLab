@@ -8,7 +8,7 @@ class Math {
     this.scheme = scheme;
   }
 
-  static validateTag( tag = '', allowedTags = [''] ) {
+  validateTag( tag = '', allowedTags = [''] ) {
     let result = null;
 
     allowedTags.forEach( allowedTag => {
@@ -20,24 +20,24 @@ class Math {
     return result;
   }
 
-  static checkIfNumber( char ) {
+  checkIfNumber( char ) {
     return !Number.isNaN( Number.parseInt( char ) );
   }
 
-  static checkIfNumberSeparator( value = '', index = 0, startIndex = 0 ) {
+  checkIfNumberSeparator( value = '', index = 0, startIndex = 0 ) {
     return index > startIndex &&
       index <= value.length - 2 &&
       this.checkIfNumber( value[index+1] ) &&
       value[index] == '.'
   }
 
-  static checkIfMinusSigns( value = '', index = 0, startIndex = 0 ) {
+  checkIfMinusSigns( value = '', index = 0, startIndex = 0 ) {
     return index == startIndex &&
       this.checkIfNumber( value[index+1] ) &&
       value[index] == '-'
   }
 
-  static extractNumber( mixedValue = '', startIndex = 0 ) {
+  extractNumber( mixedValue = '', startIndex = 0 ) {
     let value = mixedValue.replaceAll( ',', '.' );
     
     if ( startIndex >= value.length ||
