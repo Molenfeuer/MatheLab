@@ -56,6 +56,6 @@ class Math {
       result += char;
     }
 
-    return result != '' ? new Number( result ) : null;
+    return result != '' ? Number( result ) : null;
   }
 }

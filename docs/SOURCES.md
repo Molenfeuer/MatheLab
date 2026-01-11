@@ -14,6 +14,7 @@
 - [Number.isNaN()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isNaN)
 - [String: length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)
 - [String.prototype.replaceAll()](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll)
+- [Number() constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/Number#return_value)
 
 ## Mathematics stuff
 
