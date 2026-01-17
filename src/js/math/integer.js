@@ -1,4 +1,4 @@
-class Integer extends Math {
+class Integer extends MathBase {
   #number;
 
   constructor( scheme = '' ) {

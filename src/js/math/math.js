@@ -1,4 +1,4 @@
-class Math {
+class MathBase {
   scheme;
   
   constructor( scheme = '' ) {

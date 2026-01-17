@@ -1,4 +1,4 @@
-class Interval extends Math {
+class Interval extends MathBase {
   #startTag;
   #endTag;
   #leftEndpoint;
