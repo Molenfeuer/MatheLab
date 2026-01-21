@@ -17,7 +17,13 @@
 - [Number() constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/Number#return_value)
 - [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
 - [Symbol.toPrimitive](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toPrimitive)
+- [Symbol.toPrimitive](https://javascript.info/object-toprimitive#symbol-toprimitive)
+- [Object.prototype.valueOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/valueOf)
+- [Math.pow()](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Math/pow)
+- [Javascript call by value und call by reference](https://www.mediaevent.de/javascript/call-by-value-call-by-reference.html#:~:text=Call%20by%20reference,-let)
+- [binär in hexadezimal umrechnen](https://zahlensysteme-rechner.de/binaer-hexadezimal/)
 
 ## Mathematics stuff
 
 - [Interval (mathematics)](https://en.wikipedia.org/wiki/Interval_(mathematics)#:~:text=Notations%20for%20intervals,-%5Bedit)
+- [Binary to Decimal Converter](https://www.binaryhexconverter.com/binary-to-decimal-converter)

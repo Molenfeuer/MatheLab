@@ -22,7 +22,7 @@ class Integer extends MathBase {
       a = ( a - remainder ) / 2;
     }
 
-    return result.toString().replaceAll( ',', '' );
+    return new Binary( result.toString().replaceAll( ',', '' ) );
   }
 
   #toHexSymbol( value = 0 ) {
@@ -52,6 +52,10 @@ class Integer extends MathBase {
     }
 
     return result.toString().replaceAll( ',', '' );
+  }
+
+  valueOf() {
+    return this.#number;
   }
 
   [Symbol.toPrimitive]( hint ) {
